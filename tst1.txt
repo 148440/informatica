@@ -1,6 +1,0 @@
---aap
--pop-
-
-aap
-
-$letter = rand(0, 1);
