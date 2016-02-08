@@ -4,14 +4,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script> $(document).ready(function ()
         {
+
             $("div").hover(function(){ 
                 $(this).css({ 'background-color': 'pink'})
                 var t = $(this).text();
                 $("#" + t).css("color", "pink");
+
              
                
                
             });
+
              $("div").mouseout(function(){ 
                 $(this).css({ 'background-color': 'white'})
                 var t = $(this).text();
@@ -19,14 +22,11 @@
              
                
             });
-=======
->>>>>>> 49de712eafb14fa519e07b012ce73411f0830c5c
             });        </script>
 </head>
 
 <html
  <body>
-<<<<<<< HEAD
         <p id="hond">Hond</p>
         <p id="sushi">Sushi</p>
         <p id="zebra">Zebra</p>
@@ -51,7 +51,7 @@
 </html>
 <?php
 
-<<<<<<< HEAD
+
 //echo "hello Informatica v";
 include "inlezen.php";
 //include "haalStreepjesWeg.php";
@@ -60,10 +60,12 @@ include "inlezen.php";
 $rij=count($alleRegels);
 $kolom=count($alleRegels[0]);
 //print_r(str_split(trim($alleRegels[0])));
+
 $k_1 = 0;
 $r_1 = 0;
 echo '<html>';
 echo '<table border=2>';
+
 echo  '<background-color=#ffffff >' ;
 foreach($alleRegels as $regel) {
     print '<tr>';
@@ -74,15 +76,7 @@ foreach($alleRegels as $regel) {
          
             echo $letter = chr(rand(65, 65+25))  ; // Hex value
         }else
-=======
-foreach($alleRegels as $regel) {
-    print '<tr>';
-    foreach(str_split(trim($regel)) as $letter) {
-        print "<td>";
-        if ($letter == '-') {
-            $letter = '/';  // rand() chr() VOOR RANDOM LETTERS
-        }
->>>>>>> 49de712eafb14fa519e07b012ce73411f0830c5c
+
         print $letter;
         print "</td>";
     }
@@ -109,11 +103,9 @@ $k_1++;
 
 
 foreach($woorden as $woord) {
-<<<<<<< HEAD
+
     print "<div>" . $woord . "</div>";
-=======
-    print $woord;
->>>>>>> 49de712eafb14fa519e07b012ce73411f0830c5c
+
     print "<br>";
 }
 ?>
