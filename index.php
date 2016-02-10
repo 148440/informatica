@@ -6,21 +6,17 @@
         {
 
             $("div").hover(function(){ 
-                $(this).css({ 'background-color': 'pink'})
+                $(this).css({ 'background-color': 'pink'});
                 var t = $(this).text();
                 $("#" + t).css("color", "pink");
 
-             
-               
-               
             });
 
              $("div").mouseout(function(){ 
-                $(this).css({ 'background-color': 'white'})
+                $(this).css({ 'background-color': 'white'});
                 var t = $(this).text();
                 $("#" + t).css("color", "black");
-             
-               
+      
             });
             });        </script>
 </head>
@@ -37,16 +33,8 @@
       <input type="file" name="lisa">
     <input type="submit">
 </form>
-          
-     
-=======
-        <p id="p1">Hond</p><p>abc</p>
-     
-     
-<button id="#p1">Show All</button>
->>>>>>> 49de712eafb14fa519e07b012ce73411f0830c5c
-
-
+       
+        
 </body>
 </html>
 <?php
@@ -68,6 +56,7 @@ echo '<table border=2>';
 
 echo  '<background-color=#ffffff >' ;
 foreach($alleRegels as $regel) {
+    $regel = str_split(trim($regel));
     print '<tr>';
     foreach($regel as $letter) {
         print "<td>";
@@ -105,9 +94,6 @@ $k_1++;
 foreach($woorden as $woord) {
 
     print "<div>" . $woord . "</div>";
-
+ 
     print "<br>";
 }
-?>
-
-

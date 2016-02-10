@@ -15,5 +15,11 @@ PIZZA----------
 -------S-------
 
 HOND
-ZEBRA
-
+SUSHI
+ZEBRA   
+PIZZA
+BROEK
+MOBIEL
+SJAAL
+BEER
+MUIS
