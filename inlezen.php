@@ -1,7 +1,7 @@
 <?php
 
-$bestand = 'tekst.txt';
-$alleRegels = FILE($bestand);
+//$bestand = 'tekst.txt';
+//$alleRegels = FILE($bestand);
 
 //print_r($alleRegels);
 

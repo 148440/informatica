@@ -29,16 +29,16 @@
         <p id="pizza">Pizza</p>
         <p id="broek">Broek</p>
         
-<form method="POST"  action="GaInlezen.php"
+        <form method="POST"  action="GaInlezen.php" enctype="multipart/form-data">
       <input type="file" name="lisa">
-    <input type="submit">
+    <input type="submit" value = 'oplossen'>
 </form>
        
         
 </body>
 </html>
 <?php
-
+/*
 
 //echo "hello Informatica v";
 include "inlezen.php";
@@ -88,7 +88,7 @@ $r_1=0;
 $k_1++;
 }
 
- */
+ 
 
 
 foreach($woorden as $woord) {
@@ -97,3 +97,4 @@ foreach($woorden as $woord) {
  
     print "<br>";
 }
+ */
