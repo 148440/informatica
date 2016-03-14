@@ -20,7 +20,7 @@ function inlezen($fileName) {
         if ($legeRegelGezien == true) {            
             $woorden[] = $str_split_ding;
         } else {
-            $wz[] = $str_split_ding;
+            $wz[] = $str_split_ding;    // $wz[0][0] is links boven
         }
         // logica, als regel te klein is (strlen(...) < 2) 
         // dan geen wz, maar woorden[] = str_split ding

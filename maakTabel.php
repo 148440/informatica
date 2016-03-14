@@ -8,7 +8,7 @@ foreach($wz as $regel) {
     //$regel = str_split(trim($regel));
     print '<tr>';
     foreach($regel as $letter) {
-        print "<td>";
+        print "<td class='HOND sushi'>";
         if ($letter == '-') {
             $letter = '/';  // rand() chr() VOOR RANDOM LETTERS
          

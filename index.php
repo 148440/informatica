@@ -4,38 +4,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script> $(document).ready(function ()
         {
-
-            $("div").hover(function(){ 
-                $(this).css({ 'background-color': 'pink'});
+$("div").click(function() {
+    console.log("jkdsfjlksdjflksdjflskdj");
+})
+            $("div").hover(function () {
+                console.log('fsdfsdfs');
+                $(this).css({'background-color': 'pink'});
                 var t = $(this).text();
                 $("#" + t).css("color", "pink");
 
             });
 
-             $("div").mouseout(function(){ 
-                $(this).css({ 'background-color': 'white'});
+            $("div").mouseout(function () {
+                $(this).css({'background-color': 'white'});
                 var t = $(this).text();
                 $("#" + t).css("color", "black");
-      
+
             });
-            });        </script>
+        });
+    </script>
+
 </head>
 
-<html
- <body>
-        <p id="hond">Hond</p>
-        <p id="sushi">Sushi</p>
-        <p id="zebra">Zebra</p>
-        <p id="pizza">Pizza</p>
-        <p id="broek">Broek</p>
-        
+<html>
+    <body>
+
         <form method="POST"  action="GaInlezen.php" enctype="multipart/form-data">
-      <input type="file" name="lisa">
-    <input type="submit" value = 'oplossen'>
-</form>
-       
-        
-</body>
+            <input type="file" name="lisa">
+            <input type="submit" value = 'oplossen'>
+        </form>
+
+    </body>
 </html>
 <?php
 /*
